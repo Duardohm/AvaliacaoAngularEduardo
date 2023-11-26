@@ -1,0 +1,13 @@
+<div>
+    <input [(ngModel)]="novoItem" placeholder="Adicione uma tarefa" maxlength="100" />
+    <button (click)="adicionarItem()">Adicionar</button>
+  </div>
+  
+  <ul>
+    <li *ngFor="let item of itens; let i = index" [style.background-color]="item.completed ? 'yellow' : ''">
+      <span>{{ item.text }}</span>
+      <button (click)="removerItem(i)">🗑️</button>
+      <button (click)="concluirTarefa(i)">✅</button>
+    </li>
+  </ul>
+  

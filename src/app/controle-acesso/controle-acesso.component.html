@@ -1,0 +1,21 @@
+<div>
+    <button (click)="selecionarPapel('administrador')">Administrador</button>
+    <button (click)="selecionarPapel('colaborador')">Colaborador</button>
+    <button (click)="selecionarPapel('usuario')">Usuário</button>
+  
+    <div *ngIf="papelSelecionado === 'administrador'">
+      <p>Você tem permissão de administrador</p>
+        <img src="https://images.pexels.com/photos/399973/pexels-photo-399973.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagem de uma Lua">
+    </div>
+  
+    <div *ngIf="papelSelecionado === 'colaborador'">
+      <p>Você tem permissão de colaborador</p>
+        <img src="https://images.pexels.com/photos/2775580/pexels-photo-2775580.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagem de uma Lua">
+    </div>
+  
+    <div *ngIf="papelSelecionado === 'usuario'">
+      <p>Você tem permissão de usuário</p>
+        <img src="https://images.pexels.com/photos/1723637/pexels-photo-1723637.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagem de uma Lua">
+    </div>
+  </div>
+  
