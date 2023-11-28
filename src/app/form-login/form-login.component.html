@@ -8,4 +8,6 @@
   
     <button (click)="fazerLogin()">Fazer Login</button>
 </div>
+
+<app-area-logada *ngIf="autenticado" [email]="email"></app-area-logada>
   

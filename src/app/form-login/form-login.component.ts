@@ -18,7 +18,6 @@ export class FormLoginComponent {
   fazerLogin() {
     if (this.email === 'e' && this.senha === 'e') {
       this.autenticado = true;
-      
     } else {
       alert('Usuário ou senha incorretos');
     }
